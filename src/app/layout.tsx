@@ -185,12 +185,12 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify("structured_data_from_constants"),
           }}
-        />
+        /> */}
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
