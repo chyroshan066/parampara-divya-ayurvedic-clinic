@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { MapPin, Phone, Envelope, Clock } from "@phosphor-icons/react";
 import { BRANCHES } from "@/constants";
 import { useSectionFade } from "@/hooks/useSectionFade";
@@ -188,12 +188,26 @@ export const Branches = () => {
                                                 />
                                                 {branch.address}
                                             </p>
-                                            <p className="flex items-center gap-x-3 text-[15px] font-medium text-slate-800/70">
+                                            <p className="flex items-start gap-x-3 text-[15px] font-medium text-slate-800/70">
                                                 <Phone
                                                     weight="fill"
-                                                    className="w-5 h-5 shrink-0 text-primary"
+                                                    className="w-5 h-5 mt-0.5 shrink-0 text-primary"
                                                 />
-                                                {branch.phone}
+                                                <span>
+                                                    {branch.phone
+                                                        .split("/")
+                                                        .map((part) => part.trim())
+                                                        .map((part, i, arr) => (
+                                                            <Fragment key={i}>
+                                                                <span className="whitespace-nowrap">
+                                                                    {part}
+                                                                </span>
+                                                                {i < arr.length - 1
+                                                                    ? " / "
+                                                                    : ""}
+                                                            </Fragment>
+                                                        ))}
+                                                </span>
                                             </p>
                                             {/* Email — only rendered when present */}
                                             {branch.email && (

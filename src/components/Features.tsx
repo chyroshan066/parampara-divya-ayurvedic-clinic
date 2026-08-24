@@ -10,7 +10,7 @@ export const Features = () => {
   <section ref={ref} className={`section py-16 ${isVisible ? "" : "section-fade"}`}>
     <div className="container">
       {/* Feature Container */}
-      <div className="bg-[#DBDEFA] p-10 sm:p-12 md:px-16 md:py-[3.5rem] lg:px-32 lg:py-20 xl:py-24 xl:px-60 rounded-3xl">
+      <div className="bg-[#dbe9c5] p-10 sm:p-12 md:px-16 md:py-[3.5rem] lg:px-32 lg:py-20 xl:py-24 xl:px-60 rounded-3xl">
         {/* Feature info */}
         <div className="flex flex-col gap-y-4 mb-12 sm:mb-14 md:mb-16 lg:mb-20 text-center lg:text-start">
           {/* Title */}

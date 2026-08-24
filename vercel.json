@@ -5,7 +5,7 @@
       "has": [
         {
           "type": "host",
-          "value": "omkapandentalktm.com.np"
+          "value": "paramparadivyaayurved.com.np"
         },
         {
           "type": "header",
@@ -13,7 +13,7 @@
           "value": "http"
         }
       ],
-      "destination": "https://www.omkapandentalktm.com.np/:path*",
+      "destination": "https://www.paramparadivyaayurved.com.np/:path*",
       "permanent": true
     },
     {
@@ -21,7 +21,7 @@
       "has": [
         {
           "type": "host",
-          "value": "www.omkapandentalktm.com.np"
+          "value": "www.paramparadivyaayurved.com.np"
         },
         {
           "type": "header",
@@ -29,7 +29,7 @@
           "value": "http"
         }
       ],
-      "destination": "https://www.omkapandentalktm.com.np/:path*",
+      "destination": "https://www.paramparadivyaayurved.com.np/:path*",
       "permanent": true
     }
   ]

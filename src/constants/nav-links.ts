@@ -10,8 +10,8 @@ export const NAVLINKS = [
         icon: "gear"
     },
     {
-        name: "Dentist",
-        href: "/#dentists",
+        name: "Team",
+        href: "/#team",
         icon: "users"
     },
     {
@@ -28,12 +28,12 @@ export const NAVLINKS = [
 
 export const QUICK_LINKS = [
     {
-        name: "Dental Services",
+        name: "Ayurvedic Services",
         href: "/services",
     },
     {
-        name: "Dentist",
-        href: "#dentist",
+        name: "Team",
+        href: "#team",
     },
     {
         name: "Gallery",

@@ -15,9 +15,11 @@ const NAV_ITEMS = [
 function SidebarNav({
   pathname,
   onNavigate,
+  isCollapsed,
 }: {
   pathname: string | null;
   onNavigate?: () => void;
+  isCollapsed?: boolean;
 }) {
   return (
     <nav className="flex flex-col gap-y-1">
@@ -48,14 +50,17 @@ function SidebarNav({
             key={item.href}
             href={item.href}
             onClick={onNavigate}
+            title={isCollapsed ? item.name : undefined}
             className={`flex items-center gap-x-3 px-4 py-3 rounded-xl text-sm font-bold transition-colors ${
+              isCollapsed ? "justify-center px-0" : ""
+            } ${
               isActive
                 ? "bg-primary text-white"
                 : "text-slate-600 hover:bg-primary/10 hover:text-primary"
             }`}
           >
-            <Icon className="w-5 h-5" weight="bold" />
-            {item.name}
+            <Icon className="w-5 h-5 shrink-0" weight="bold" />
+            {!isCollapsed && item.name}
           </Link>
         );
       })}
@@ -63,25 +68,36 @@ function SidebarNav({
   );
 }
 
-function SidebarBrand() {
+function SidebarBrand({ isCollapsed }: { isCollapsed?: boolean }) {
   return (
-    <div className="flex items-center gap-x-2 px-2">
+    <div
+      className={`flex items-center gap-x-2 px-2 ${
+        isCollapsed ? "justify-center px-0" : ""
+      }`}
+    >
       <img
         style={{ height: "32px", width: "auto", objectFit: "contain" }}
         src="/images/logo.webp"
         alt="Om Kapan Dental"
       />
-      <span className="text-slate-800 font-bold text-base">Admin</span>
+      {!isCollapsed && (
+        <span className="text-slate-800 font-bold text-base">Admin</span>
+      )}
     </div>
   );
 }
 
 interface AdminSidebarProps {
   isMobileOpen: boolean;
+  isDesktopCollapsed?: boolean;
   onClose: () => void;
 }
 
-export function AdminSidebar({ isMobileOpen, onClose }: AdminSidebarProps) {
+export function AdminSidebar({
+  isMobileOpen,
+  isDesktopCollapsed,
+  onClose,
+}: AdminSidebarProps) {
   const pathname = usePathname();
   const mobileSidebarRef = useRef<HTMLElement>(null);
 
@@ -92,14 +108,18 @@ export function AdminSidebar({ isMobileOpen, onClose }: AdminSidebarProps) {
 
   return (
     <>
-      {/* --- Desktop: always-visible, in normal document flow. Same
-          hidden/lg:flex pattern already proven to work in Header.tsx,
-          instead of toggling position:fixed via a responsive variant. --- */}
-      <aside className="hidden md:flex w-64 shrink-0 flex-col bg-white border-r border-gray-100 px-4 py-6">
+      {/* --- Desktop: always-visible, in normal document flow. Width
+          animates between the full 64 (w-64) and a collapsed icon-only
+          20 (w-20) based on the hamburger toggle in AdminTopbar. --- */}
+      <aside
+        className={`hidden md:flex shrink-0 flex-col bg-white border-r border-gray-100 px-4 py-6 transition-all duration-300 ${
+          isDesktopCollapsed ? "w-20" : "w-64"
+        }`}
+      >
         <div className="mb-8">
-          <SidebarBrand />
+          <SidebarBrand isCollapsed={isDesktopCollapsed} />
         </div>
-        <SidebarNav pathname={pathname} />
+        <SidebarNav pathname={pathname} isCollapsed={isDesktopCollapsed} />
       </aside>
 
       {/* --- Mobile: overlay backdrop + slide-in drawer, hidden entirely

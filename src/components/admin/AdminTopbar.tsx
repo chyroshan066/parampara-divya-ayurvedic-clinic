@@ -15,8 +15,8 @@ export function AdminTopbar({ email, onMenuClick }: AdminTopbarProps) {
         <button
           type="button"
           onClick={onMenuClick}
-          className="md:hidden flex items-center justify-center w-10 h-10 rounded-xl border border-gray-200 text-slate-600 transition-colors hover:text-primary hover:border-primary"
-          aria-label="Open menu"
+          className="flex items-center justify-center w-10 h-10 rounded-xl border border-gray-200 text-slate-600 transition-colors hover:text-primary hover:border-primary"
+          aria-label="Toggle menu"
         >
           <List className="w-5 h-5" weight="bold" />
         </button>

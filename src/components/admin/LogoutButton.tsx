@@ -18,7 +18,7 @@ export function LogoutButton() {
     <button
       onClick={handleLogout}
       disabled={isLoading}
-      className="inline-flex items-center justify-center gap-x-0 h-12 px-6 min-w-[100px] bg-primary text-white text-sm font-bold rounded-xl transition-colors hover:bg-indigo-800 disabled:opacity-60"
+      className="inline-flex items-center justify-center gap-x-0 h-12 px-6 min-w-[100px] bg-primary text-white text-sm font-bold rounded-xl transition-colors hover:bg-primary-hover disabled:opacity-60"
     >
       {isLoading ? "Signing out..." : "Logout"}
     </button>

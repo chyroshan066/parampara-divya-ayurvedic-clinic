@@ -25,12 +25,12 @@ export const Services = () => {
               <h3 className="text-sm text-primary font-bold mb-3">SERVICES</h3>
               {/* Subtitle */}
               <p className="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">
-                Feel amazing about your oral health
+                Holistic Care for Your Health & Well-Being
               </p>
             </div>
             {/* Right Side */}
             <p className="text-center lg:text-start lg:max-w-screen-xs text-[15px] font-medium text-slate-800/70 -mb-8">
-              From whitening to root canals, we offer complete dental care under one roof. Our experienced team uses the latest technology to keep your treatment modern, pain-free, and effective.
+              From Ayurvedic consultation and personalized treatment to pathology laboratory services, we provide comprehensive healthcare under one roof. Our approach combines traditional Ayurvedic practices with attentive, patient-focused care to support your overall health and wellness.
             </p>
           </div>
           {/* Services */}

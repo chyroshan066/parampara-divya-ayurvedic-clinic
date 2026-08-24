@@ -153,7 +153,7 @@ export const TimePicker = ({
           <button
             type="button"
             onClick={handleDone}
-            className="mt-3 h-10 w-full rounded-xl bg-primary text-sm font-bold text-white transition-colors hover:bg-indigo-800"
+            className="mt-3 h-10 w-full rounded-xl bg-primary text-sm font-bold text-white transition-colors hover:bg-primary-hover"
           >
             Done
           </button>

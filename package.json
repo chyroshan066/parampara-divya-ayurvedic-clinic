@@ -1,5 +1,5 @@
 {
-  "name": "om-kapan-dental",
+  "name": "parampara-divya-ayurvedic",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -29,8 +29,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "baseline-browser-mapping": "^2.11.10",

@@ -253,7 +253,7 @@ export function GalleryManager({
           type="button"
           onClick={() => setIsAdding(true)}
           style={{ padding: "12px 24px" }}
-          className="inline-flex items-center gap-x-2 rounded-xl bg-primary text-white text-sm font-bold transition-colors hover:bg-indigo-800"
+          className="inline-flex items-center gap-x-2 rounded-xl bg-primary text-white text-sm font-bold transition-colors hover:bg-primary-hover"
         >
           <Plus className="w-4 h-4" weight="bold" />
           Add Photo or Video
@@ -380,7 +380,7 @@ export function GalleryManager({
             type="submit"
             disabled={isUploading}
             style={{ padding: "12px 32px", marginTop: "24px" }}
-            className="inline-flex items-center gap-x-2 rounded-xl bg-primary text-white text-sm font-bold transition-colors hover:bg-indigo-800 disabled:opacity-60"
+            className="inline-flex items-center gap-x-2 rounded-xl bg-primary text-white text-sm font-bold transition-colors hover:bg-primary-hover disabled:opacity-60"
           >
             {isUploading ? "Uploading..." : "Upload"}
           </button>

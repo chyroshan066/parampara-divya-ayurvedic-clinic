@@ -56,7 +56,7 @@ function AdminLoginForm() {
             Admin Login
           </h1>
           <p className="text-slate-800/60 text-sm text-center">
-            Sign in to manage Om Kapan Dental
+            Sign in to manage Parampara Divya Ayurvedic
           </p>
         </div>
 
@@ -123,7 +123,7 @@ function AdminLoginForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="h-12 w-full bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800 disabled:opacity-60"
+            className="h-12 w-full bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-primary-hover disabled:opacity-60"
           >
             {isSubmitting ? "Signing in..." : "Sign in"}
           </button>

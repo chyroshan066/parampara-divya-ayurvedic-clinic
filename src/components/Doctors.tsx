@@ -143,7 +143,7 @@ export const Doctors = () => {
 
     return (
         <section
-            id="dentists"
+            id="team"
             ref={ref}
             className={`section py-16 ${isVisible ? "" : "section-fade"}`}
         >
@@ -152,11 +152,10 @@ export const Doctors = () => {
                 <div className="flex flex-col items-center gap-y-4 text-center mb-12">
                     <h4 className="text-sm text-primary font-bold">OUR TEAM</h4>
                     <p className="text-slate-800 text-4xl leading-snug font-bold sm:max-w-screen-sm">
-                        Meet our Dentists
+                        Meet Our Ayurvedic Care Team
                     </p>
                     <p className="max-w-lg text-[15px] font-medium text-slate-800/70">
-                        Every treatment is led by qualified, NMC-registered dentists
-                        committed to safe, patient-first care.
+                        Our experienced Ayurvedic practitioners and healthcare professionals are committed to providing personalized, thoughtful care with a focus on your individual health and well-being.
                     </p>
                 </div>
 
@@ -173,11 +172,11 @@ export const Doctors = () => {
                                     className="flex h-full flex-col items-center text-center gap-y-3 bg-white border border-gray-100 rounded-3xl p-8 shadow-sm transition-all hover:shadow-2xl hover:shadow-slate-400/20 hover:-translate-y-1"
                                 >
                                     {/* Photo */}
-                                    <img
+                                    {/* <img
                                         src={doctor.img}
                                         alt={doctor.name}
                                         className="w-28 h-28 rounded-full object-cover border-4 border-primary/10"
-                                    />
+                                    /> */}
                                     {/* Name + qualification grouped up top; the
                                         badge is pushed to the bottom via
                                         mt-auto so it lines up across cards
@@ -191,9 +190,9 @@ export const Doctors = () => {
                                             {doctor.qualification}
                                         </p>
                                     </div>
-                                    <span className="mt-auto bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">
+                                    {/* <span className="mt-auto bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">
                                         NMC No: {doctor.nmcNo}
-                                    </span>
+                                    </span> */}
                                 </div>
                             </div>
                         ))}

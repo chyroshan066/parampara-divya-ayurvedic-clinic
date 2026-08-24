@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',  // '/' means allow crawling of the entire root directory
       disallow: ['/api/', '/admin/'], // "disallow" prevents search engines from wasting time on irrelevant pages.
     },
-    sitemap: 'https://www.omkapandentalktm.com.np/sitemap.xml',
+    sitemap: 'https://www.paramparadivyaayurved.com.np/sitemap.xml',
   };
 }

@@ -2,7 +2,7 @@ import { CONATACTS, QUICK_LINKS, SOCIAL_LINKS } from "@/constants";
 import Link from "next/link";
 
 export const Footer = () => (
-  <footer className="bg-[#041434]">
+  <footer className="bg-[#50793c]">
     <div className="container">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-10 xl:gap-x-20 text-white py-16">
         {/* About me in Footer */}
@@ -15,16 +15,14 @@ export const Footer = () => (
             <img
               src="/images/logo.webp"
               alt="logo-footer"
-              className="h-16 w-16 rounded-full object-cover"
+              className="h-16 w-16 object-contain"
             />
             {/* Added: brand name beside the logo, in white */}
-            <p className="text-[18px] font-bold text-white">Om Kapan Dental</p>
+            <p className="text-[18px] font-bold text-white">Parampara Divya Ayurvedic</p>
           </div>
           {/* Description */}
           <p className="text-[15px] text-white/70  mt-4">
-            Trusted dental care in Kapan, Bhrikuti Chowk, Kathmandu — from
-            implants and braces to root canals and teeth whitening, delivered
-            with modern technology and a gentle, patient-first approach.
+            Trusted Ayurvedic care in Pipalbot, Boudha, Kathmandu — offering personalized Ayurvedic consultation, traditional treatments, wellness care, and diagnostic services with an experienced, patient-focused approach.
           </p>
           {/* Social in Footer */}
           <div className="mt-8">
@@ -95,8 +93,8 @@ export const Footer = () => (
                       the actual key in CONATACTS is named differently. */}
                   {contact.name === "Open Hour" ? (
                     <div className="font-bold">
-                      <p>Sun - Fri: 9:00 AM - 7:00 PM</p>
-                      <p>Saturday: 9:00 AM - 5:00 PM</p>
+                      <p>8:00 AM - 7:00 PM</p>
+                      {/* <p>Saturday: 9:00 AM - 5:00 PM</p> */}
                     </div>
                   ) : (
                     <p className="font-bold">{contact.value}</p>
@@ -106,6 +104,27 @@ export const Footer = () => (
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Bottom credit bar — separated from the main footer grid by a
+          hairline divider. Swap the placeholder name/href below with your
+          actual studio name and URL. */}
+      <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-y-3 text-[13px] text-white/60">
+        <p>
+          &copy; {new Date().getFullYear()} Parampara Divya Ayurvedic. All rights
+          reserved.
+        </p>
+        <p>
+          Crafted by{" "}
+          <a
+            // href="https://your-website.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-white/80 hover:text-white transition-colors"
+          >
+            ORBIXXANO
+          </a>
+        </p>
       </div>
     </div>
   </footer>

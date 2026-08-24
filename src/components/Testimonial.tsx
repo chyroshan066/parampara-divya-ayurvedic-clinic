@@ -60,7 +60,7 @@ export const Testimonial = () => {
   return (
     <section ref={ref} className={`section py-16 ${isVisible ? "" : "section-fade"}`}>
             <div className="container">
-                <div className="bg-[#D9EBFA] rounded-3xl p-10 md:px-16 md:py-[3.5rem] lg:py-20 xl:py-24">
+                <div className="bg-[#d9e3be] rounded-3xl p-10 md:px-16 md:py-[3.5rem] lg:py-20 xl:py-24">
                     {/* TESTIMONIAL info contents */}
                     <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4">
                         {/* Left Side */}

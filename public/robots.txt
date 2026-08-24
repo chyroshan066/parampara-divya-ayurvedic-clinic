@@ -11,4 +11,4 @@ Disallow: /*.woff$
 Disallow: /*.ttf$
 Disallow: /*.eot$
 
-Sitemap: https://www.omkapandentalktm.com.np/sitemap.xml
+Sitemap: https://www.paramparadivyaayurved.com.np/sitemap.xml

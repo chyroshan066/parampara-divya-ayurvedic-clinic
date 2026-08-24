@@ -114,8 +114,8 @@ export const Header = ({ isAdminLoggedIn }: { isAdminLoggedIn: boolean }) => {
               src="/images/logo.webp"
               alt="Site-Logo"
             />
-            <span style={{ fontSize: "18px", fontWeight: 700, color: "#1e293b" }}>
-              Om Kapan Dental
+            <span style={{ fontSize: "14px", fontWeight: 700, color: "#1e293b" }}>
+              Parampara Divya Ayurvedic
             </span>
           </a>
           {/* Header Menu */}
@@ -139,7 +139,7 @@ export const Header = ({ isAdminLoggedIn }: { isAdminLoggedIn: boolean }) => {
           {/* Header Button + Admin Login */}
           <div className="hidden lg:flex items-center gap-x-3">
             <a
-              className="h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800"
+              className="h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-primary-hover"
               href="/#contact"
               onClick={(e) => handleNavClick(e, "/#contact")}
             >
@@ -207,7 +207,7 @@ export const Header = ({ isAdminLoggedIn }: { isAdminLoggedIn: boolean }) => {
               alt="logo"
             />
             <span style={{ fontSize: "16px", fontWeight: 700, color: "#1e293b" }}>
-              Om Kapan Dental
+              Parampara Divya Ayurved
             </span>
           </div>
           <button type="button" id="close-button" onClick={hideMobileMenu}>
