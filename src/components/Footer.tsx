@@ -25,7 +25,7 @@ export const Footer = () => (
             Trusted Ayurvedic care in Pipalbot, Boudha, Kathmandu — offering personalized Ayurvedic consultation, traditional treatments, wellness care, and diagnostic services with an experienced, patient-focused approach.
           </p>
           {/* Social in Footer */}
-          {/* <div className="mt-8">
+          <div className="mt-8">
             <p className="text-[13px] font-medium text-white/70 mb-4">
               FOLLOW US ON
             </p>
@@ -43,7 +43,7 @@ export const Footer = () => (
                 </a>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
         {/* Quick Access in Footer */}
         <div>
